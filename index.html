@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demilade | AI & Automation Engineer</title>
+<meta name="description" content="Demilade's professional AI and Automation Engineering portfolio.">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: #0b1120;
+  color: #e8edf7;
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+nav {
+  display: flex; justify-content: space-between;
+  align-items: center; padding: 20px 8%;
+  background: #101a2d; position: sticky; top: 0;
+  border-bottom: 1px solid #26344c; z-index: 5;
+}
+.logo { color: #63d5c5; font-size: 21px; font-weight: bold; }
+nav a { color: #dce5f5; text-decoration: none; margin-left: 18px; font-size: 14px; }
+section { padding: 75px 8%; }
+.hero { min-height: 75vh; display: flex; flex-direction: column; justify-content: center; }
+.tag { color: #63d5c5; letter-spacing: 2px; font-size: 13px; }
+h1 { font-size: clamp(36px, 7vw, 65px); line-height: 1.15; margin: 18px 0; }
+h1 span, h2 span { color: #63d5c5; }
+.hero p { max-width: 650px; color: #aab8cc; font-size: 17px; }
+.btn {
+  display: inline-block; background: #63d5c5; color: #08131e;
+  padding: 12px 22px; border-radius: 7px;
+  text-decoration: none; font-weight: bold; margin-top: 25px;
+}
+h2 { font-size: 32px; margin-bottom: 20px; }
+.muted { color: #aab8cc; max-width: 750px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit,minmax(230px,1fr)); gap: 18px; margin-top: 25px; }
+.card {
+  background: #121e32; border: 1px solid #263650;
+  border-radius: 12px; padding: 23px;
+}
+.card h3 { color: #63d5c5; margin-bottom: 10px; }
+.card p { color: #aab8cc; font-size: 14px; }
+.skills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.skills span {
+  background: #172941; border: 1px solid #29445c;
+  padding: 8px 13px; border-radius: 20px; font-size: 13px;
+}
+.status { color: #f2c879; font-size: 12px; margin-top: 14px; display: block; }
+#contact { background: #101a2d; }
+footer { text-align: center; padding: 25px; color: #8292aa; font-size: 13px; }
+@media(max-width:600px) {
+  nav { padding: 16px 5%; }
+  nav a { margin-left: 9px; font-size: 12px; }
+  section { padding: 55px 6%; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">DEMILADE.</div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="tag">AI & AUTOMATION ENGINEER</div>
+  <h1>Building smarter systems<br>through <span>AI & Automation.</span></h1>
+  <p>
+    Hello, I'm Demilade. I am developing intelligent automation
+    solutions that help businesses simplify repetitive tasks,
+    improve workflows and work more efficiently.
+  </p>
+  <div>
+    <a class="btn" href="#projects">Explore My Projects</a>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About <span>Me</span></h2>
+  <p class="muted">
+    I am an aspiring AI & Automation Engineer with an interest
+    in workflow automation, artificial intelligence and business
+    process optimisation. I enjoy learning how technology can
+    solve practical problems and improve everyday operations.
+    I am continuously developing my technical skills through
+    hands-on projects and practical learning.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>Technical <span>Skills</span></h2>
+  <p class="muted">Technologies I am learning and working with.</p>
+  <div class="skills">
+    <span>n8n</span>
+    <span>Zapier</span>
+    <span>Make</span>
+    <span>OpenAI</span>
+    <span>Prompt Engineering</span>
+    <span>Google Sheets</span>
+    <span>Airtable</span>
+    <span>Webhooks</span>
+    <span>API Integration</span>
+    <span>AI Agents</span>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>My <span>Projects</span></h2>
+  <p class="muted">Practical solutions I am developing and documenting.</p>
+  <div class="cards">
+    <div class="card">
+      <h3>Appointment Booking Automation</h3>
+      <p>An automated booking workflow designed to collect
+      customer details, organise appointments and route requests
+      to the right department using Zapier and Google Sheets.</p>
+      <span class="status">In development</span>
+    </div>
+    <div class="card">
+      <h3>AI Email Classification</h3>
+      <p>An n8n workflow designed to analyse incoming emails
+      with AI and classify them into departments such as Sales,
+      HR, Finance and Customer Service.</p>
+      <span class="status">In development</span>
+    </div>
+    <div class="card">
+      <h3>AI Customer Support Assistant</h3>
+      <p>A proposed AI assistant that can answer common
+      customer questions, understand requests and escalate
+      complex issues to human support.</p>
+      <span class="status">Planned project</span>
+    </div>
+    <div class="card">
+      <h3>Automated Lead Management</h3>
+      <p>A proposed workflow for capturing customer leads,
+      organising information and notifying sales teams.</p>
+      <span class="status">Planned project</span>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Let's <span>Connect</span></h2>
+  <p class="muted">
+    Interested in AI, automation or collaborating on a project?
+    I'd love to connect.
+  </p>
+  <a class="btn" href="https://github.com/tayokehindedemilade-coder">
+    Visit My GitHub
+  </a>
+  <p class="muted" style="margin-top:20px">
+    Email: Add your professional email address here.
+  </p>
+</section>
+
+<footer>
+  © 2026 Demilade | AI & Automation Engineer Portfolio
+</footer>
+
+</body>
+</html>

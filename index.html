@@ -4,7 +4,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Demilade's AI and Automation Engineering portfolio.">
+
+<meta name="description" content="Demilade's professional AI and Automation Engineering portfolio.">
+
+<meta name="theme-color" content="#070d18">
+
 <title>Demilade | AI & Automation Engineer</title>
 
 <style>
@@ -16,19 +20,30 @@
   --muted: #9aabc0;
   --border: #23354b;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html { scroll-behavior: smooth; }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--bg);
   color: var(--white);
   font-family: Arial, sans-serif;
   line-height: 1.7;
 }
-a { text-decoration: none; }
+
+a {
+  text-decoration: none;
+}
+
+/* NAVIGATION */
+
 nav {
   position: sticky;
   top: 0;
@@ -36,122 +51,149 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 7%;
-  background: rgba(7,13,24,.95);
+  padding: 18px 7%;
+  background: rgba(7,13,24,.96);
   border-bottom: 1px solid var(--border);
   backdrop-filter: blur(12px);
 }
+
 .logo {
   color: var(--teal);
-  font-size: 24px;
+  font-size: 23px;
   font-weight: 900;
   letter-spacing: 2px;
 }
+
 .navlinks {
   display: flex;
   gap: 24px;
 }
+
 .navlinks a {
   color: var(--muted);
   font-size: 13px;
+  transition: .3s;
 }
-.navlinks a:hover { color: var(--teal); }
+
+.navlinks a:hover {
+  color: var(--teal);
+}
+
+/* HERO SECTION */
+
 .hero {
-  min-height: 82vh;
+  min-height: 85vh;
   padding: 100px 8%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   background:
-    radial-gradient(ellipse at 80% 35%,rgba(36,188,174,.12),transparent 45%),
+    radial-gradient(
+      ellipse at 80% 35%,
+      rgba(36,188,174,.15),
+      transparent 45%
+    ),
     var(--bg);
 }
+
 .eyebrow {
   color: var(--teal);
   letter-spacing: 3px;
   font-size: 12px;
   font-weight: bold;
 }
+
 .hero h1 {
   font-size: clamp(39px,8vw,76px);
   line-height: 1.12;
   margin: 20px 0;
   max-width: 850px;
 }
-.highlight { color: var(--teal); }
+
+.highlight {
+  color: var(--teal);
+}
+
 .hero p {
   color: var(--muted);
   max-width: 630px;
   font-size: 17px;
 }
+
 .actions {
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
   margin-top: 30px;
 }
+
 .btn {
   padding: 12px 22px;
   border-radius: 6px;
   font-weight: bold;
   font-size: 14px;
   display: inline-block;
+  transition: .3s;
 }
+
 .primary {
   background: var(--teal);
   color: #07131d;
 }
+
+.primary:hover {
+  transform: translateY(-3px);
+}
+
 .secondary {
   border: 1px solid var(--teal);
   color: var(--teal);
 }
-section { padding: 80px 8%; }
+
+/* GENERAL SECTIONS */
+
+section {
+  padding: 80px 8%;
+}
+
 .section-label {
   color: var(--teal);
   letter-spacing: 3px;
   font-size: 11px;
   font-weight: bold;
 }
+
 h2 {
   font-size: 34px;
   margin: 10px 0 20px;
 }
+
 .description {
   color: var(--muted);
   max-width: 750px;
 }
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-  gap: 18px;
-  margin-top: 30px;
+
+/* ABOUT */
+
+#about {
+  background: #0b1423;
 }
-.card {
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 24px;
-  transition: .25s;
+
+.about-box {
+  border-left: 3px solid var(--teal);
+  padding-left: 22px;
 }
-.card:hover {
-  border-color: var(--teal);
-  transform: translateY(-5px);
-}
-.card h3 {
-  color: var(--teal);
-  font-size: 17px;
-  margin-bottom: 10px;
-}
-.card p {
-  color: var(--muted);
-  font-size: 14px;
-}
+
+/* SKILLS */
+
 .skills {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 25px;
 }
+
 .skill {
   padding: 9px 15px;
   border: 1px solid var(--border);
@@ -159,7 +201,48 @@ h2 {
   border-radius: 6px;
   color: #c6d5e7;
   font-size: 13px;
+  transition: .3s;
 }
+
+.skill:hover {
+  border-color: var(--teal);
+  color: var(--teal);
+}
+
+/* PROJECTS */
+
+.grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  transition: .3s;
+}
+
+.card:hover {
+  border-color: var(--teal);
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: var(--teal);
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
 .status {
   display: inline-block;
   margin-top: 16px;
@@ -168,17 +251,27 @@ h2 {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-#about { background: #0b1423; }
-.about-box {
-  border-left: 3px solid var(--teal);
-  padding-left: 22px;
+
+/* CONTACT */
+
+#contact {
+  background: #0b1423;
 }
-#contact { background: #0b1423; }
+
 .contact-link {
   color: var(--teal);
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 18px;
+  transition: .3s;
+  overflow-wrap: anywhere;
 }
+
+.contact-link:hover {
+  color: white;
+}
+
+/* FOOTER */
+
 footer {
   text-align: center;
   padding: 28px 15px;
@@ -186,70 +279,158 @@ footer {
   font-size: 12px;
   border-top: 1px solid var(--border);
 }
+
+/* MOBILE RESPONSIVENESS */
+
 @media(max-width:600px) {
-  nav { padding: 14px 5%; }
-  .navlinks { gap: 11px; }
-  .navlinks a { font-size: 11px; }
-  .logo { font-size: 20px; }
-  section { padding: 65px 6%; }
-  .hero { padding: 85px 6%; }
-  h2 { font-size: 29px; }
+
+  nav {
+    padding: 14px 5%;
+  }
+
+  .navlinks {
+    gap: 11px;
+  }
+
+  .navlinks a {
+    font-size: 11px;
+  }
+
+  .logo {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  section {
+    padding: 65px 6%;
+  }
+
+  .hero {
+    padding: 85px 6%;
+  }
+
+  h2 {
+    font-size: 29px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
 }
+
 </style>
 </head>
 
 <body>
 
+<!-- NAVIGATION -->
+
 <nav>
-  <a href="#home" class="logo">DT.</a>
+
+  <a href="#home" class="logo">DEMILADE.</a>
+
   <div class="navlinks">
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </div>
+
 </nav>
 
+
+<!-- HOMEPAGE -->
+
 <header class="hero" id="home">
-  <div class="eyebrow">WELCOME TO MY DIGITAL SPACE</div>
-  <h1>Turning Ideas Into<br><span class="highlight">Intelligent Automation.</span></h1>
+
+  <div class="eyebrow">
+    WELCOME TO MY DIGITAL SPACE
+  </div>
+
+  <h1>
+    Turning Ideas Into
+    <br>
+    <span class="highlight">
+      Intelligent Automation.
+    </span>
+  </h1>
+
   <p>
     I'm Demilade, an aspiring AI & Automation Engineer
     passionate about building intelligent workflows,
     connecting technologies and creating solutions
-    that make business processes smarter.
+    that make business processes smarter and more efficient.
   </p>
+
   <div class="actions">
-    <a href="#projects" class="btn primary">Explore My Work ↗</a>
-    <a href="#contact" class="btn secondary">Let's Connect</a>
+
+    <a href="#projects" class="btn primary">
+      Explore My Work ↗
+    </a>
+
+    <a href="#contact" class="btn secondary">
+      Let's Connect
+    </a>
+
   </div>
+
 </header>
 
+
+<!-- ABOUT ME -->
+
 <section id="about">
-  <div class="section-label">01 / ABOUT ME</div>
-  <h2>Building With <span class="highlight">Purpose.</span></h2>
-  <div class="about-box">
-    <p class="description">
-      I am an aspiring AI & Automation Engineer with an
-      interest in artificial intelligence, workflow design
-      and business process optimisation. My focus is on
-      learning, experimenting and developing practical
-      solutions that address real-world problems.
-      Through hands-on projects, I am building my ability
-      to integrate AI tools, automate repetitive tasks
-      and create efficient digital systems.
-    </p>
+
+  <div class="section-label">
+    01 / ABOUT ME
   </div>
+
+  <h2>
+    Building With
+    <span class="highlight">Purpose.</span>
+  </h2>
+
+  <div class="about-box">
+
+    <p class="description">
+      I am an aspiring AI & Automation Engineer
+      with an interest in artificial intelligence,
+      workflow design and business process optimisation.
+
+      My focus is on learning, experimenting and
+      developing practical solutions that address
+      real-world problems.
+
+      Through hands-on projects, I am building my
+      ability to integrate AI tools, automate repetitive
+      tasks and create efficient digital systems.
+    </p>
+
+  </div>
+
 </section>
 
+
+<!-- TECHNICAL SKILLS -->
+
 <section id="skills">
-  <div class="section-label">02 / TECHNOLOGY</div>
-  <h2>My Technical <span class="highlight">Toolkit.</span></h2>
+
+  <div class="section-label">
+    02 / TECHNOLOGY
+  </div>
+
+  <h2>
+    My Technical
+    <span class="highlight">Toolkit.</span>
+  </h2>
+
   <p class="description">
-    Tools and technologies I am learning and developing
-    practical experience with.
+    Tools and technologies I am learning and
+    developing practical experience with.
   </p>
+
   <div class="skills">
+
     <span class="skill">n8n</span>
     <span class="skill">Zapier</span>
     <span class="skill">Make</span>
@@ -260,78 +441,157 @@ footer {
     <span class="skill">Webhooks</span>
     <span class="skill">API Integration</span>
     <span class="skill">AI Agents</span>
+
   </div>
+
 </section>
 
+
+<!-- PROJECTS -->
+
 <section id="projects">
-  <div class="section-label">03 / SELECTED WORK</div>
-  <h2>Projects & <span class="highlight">Experiments.</span></h2>
+
+  <div class="section-label">
+    03 / SELECTED WORK
+  </div>
+
+  <h2>
+    Projects &
+    <span class="highlight">Experiments.</span>
+  </h2>
+
   <p class="description">
-    A collection of business automation ideas and
-    practical solutions I am developing.
+    A collection of business automation ideas
+    and practical solutions I am developing.
   </p>
+
   <div class="grid">
+
     <article class="card">
+
       <h3>01. Appointment Automation</h3>
+
       <p>
-        A booking workflow designed to collect customer
-        information, organise appointments and route
-        requests to the correct department.
+        A booking workflow designed to collect
+        customer information, organise appointments
+        and route requests to the correct department.
       </p>
-      <span class="status">In development</span>
+
+      <span class="status">
+        In development
+      </span>
+
     </article>
+
+
     <article class="card">
+
       <h3>02. AI Email Classification</h3>
+
       <p>
         An intelligent email workflow designed to
         analyse incoming messages and classify them
         into Sales, HR, Finance and other departments.
       </p>
-      <span class="status">In development</span>
+
+      <span class="status">
+        In development
+      </span>
+
     </article>
+
+
     <article class="card">
+
       <h3>03. AI Support Assistant</h3>
+
       <p>
         A proposed assistant for answering common
         customer questions and escalating complex
         enquiries to human support.
       </p>
-      <span class="status">Planned</span>
+
+      <span class="status">
+        Planned
+      </span>
+
     </article>
+
+
     <article class="card">
+
       <h3>04. Lead Management</h3>
+
       <p>
         A proposed system for capturing leads,
         organising customer information and
         notifying sales teams automatically.
       </p>
-      <span class="status">Planned</span>
+
+      <span class="status">
+        Planned
+      </span>
+
     </article>
+
   </div>
+
 </section>
 
+
+<!-- CONTACT -->
+
 <section id="contact">
-  <div class="section-label">04 / GET IN TOUCH</div>
-  <h2>Let's Build Something <span class="highlight">Smart.</span></h2>
+
+  <div class="section-label">
+    04 / GET IN TOUCH
+  </div>
+
+  <h2>
+    Let's Build Something
+    <span class="highlight">Smart.</span>
+  </h2>
+
   <p class="description">
     Interested in AI, workflow automation or technology?
     Let's connect and explore opportunities to create
     meaningful solutions.
   </p>
+
   <a class="contact-link"
-     href="https://github.com/tayokehindedemilade-coder">
-     GitHub Profile ↗
+     href="mailto:tayokehindedemilade@gmail.com">
+
+    Email:
+    tayokehindedemilade@gmail.com ↗
+
   </a>
+
   <br>
+
   <a class="contact-link"
-     href="mailto:YOUR-EMAIL@example.com">
-     Email Me ↗
+     href="https://github.com/tayokehindedemilade-coder"
+     target="_blank"
+     rel="noopener noreferrer">
+
+    GitHub Profile ↗
+
   </a>
+
 </section>
 
+
+<!-- FOOTER -->
+
 <footer>
-  <p>DT. | DEMILADE — AI & AUTOMATION ENGINEER</p>
-  <p>© 2026. Built with curiosity and purpose.</p>
+
+  <p>
+    DEMILADE. | AI & AUTOMATION ENGINEER
+  </p>
+
+  <p>
+    © 2026 Demilade. Built with curiosity and purpose.
+  </p>
+
 </footer>
 
 </body>

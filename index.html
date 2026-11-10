@@ -4,65 +4,205 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Demilade's AI and Automation Engineering portfolio.">
 <title>Demilade | AI & Automation Engineer</title>
-<meta name="description" content="Demilade's professional AI and Automation Engineering portfolio.">
+
 <style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #070d18;
+  --panel: #101b2d;
+  --teal: #54e2cf;
+  --white: #edf5ff;
+  --muted: #9aabc0;
+  --border: #23354b;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html { scroll-behavior: smooth; }
 body {
-  background: #0b1120;
-  color: #e8edf7;
+  background: var(--bg);
+  color: var(--white);
   font-family: Arial, sans-serif;
   line-height: 1.7;
 }
+a { text-decoration: none; }
 nav {
-  display: flex; justify-content: space-between;
-  align-items: center; padding: 20px 8%;
-  background: #101a2d; position: sticky; top: 0;
-  border-bottom: 1px solid #26344c; z-index: 5;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 7%;
+  background: rgba(7,13,24,.95);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
 }
-.logo { color: #63d5c5; font-size: 21px; font-weight: bold; }
-nav a { color: #dce5f5; text-decoration: none; margin-left: 18px; font-size: 14px; }
-section { padding: 75px 8%; }
-.hero { min-height: 75vh; display: flex; flex-direction: column; justify-content: center; }
-.tag { color: #63d5c5; letter-spacing: 2px; font-size: 13px; }
-h1 { font-size: clamp(36px, 7vw, 65px); line-height: 1.15; margin: 18px 0; }
-h1 span, h2 span { color: #63d5c5; }
-.hero p { max-width: 650px; color: #aab8cc; font-size: 17px; }
+.logo {
+  color: var(--teal);
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+.navlinks {
+  display: flex;
+  gap: 24px;
+}
+.navlinks a {
+  color: var(--muted);
+  font-size: 13px;
+}
+.navlinks a:hover { color: var(--teal); }
+.hero {
+  min-height: 82vh;
+  padding: 100px 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background:
+    radial-gradient(ellipse at 80% 35%,rgba(36,188,174,.12),transparent 45%),
+    var(--bg);
+}
+.eyebrow {
+  color: var(--teal);
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.hero h1 {
+  font-size: clamp(39px,8vw,76px);
+  line-height: 1.12;
+  margin: 20px 0;
+  max-width: 850px;
+}
+.highlight { color: var(--teal); }
+.hero p {
+  color: var(--muted);
+  max-width: 630px;
+  font-size: 17px;
+}
+.actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
 .btn {
-  display: inline-block; background: #63d5c5; color: #08131e;
-  padding: 12px 22px; border-radius: 7px;
-  text-decoration: none; font-weight: bold; margin-top: 25px;
+  padding: 12px 22px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  display: inline-block;
 }
-h2 { font-size: 32px; margin-bottom: 20px; }
-.muted { color: #aab8cc; max-width: 750px; }
-.cards { display: grid; grid-template-columns: repeat(auto-fit,minmax(230px,1fr)); gap: 18px; margin-top: 25px; }
+.primary {
+  background: var(--teal);
+  color: #07131d;
+}
+.secondary {
+  border: 1px solid var(--teal);
+  color: var(--teal);
+}
+section { padding: 80px 8%; }
+.section-label {
+  color: var(--teal);
+  letter-spacing: 3px;
+  font-size: 11px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 34px;
+  margin: 10px 0 20px;
+}
+.description {
+  color: var(--muted);
+  max-width: 750px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 18px;
+  margin-top: 30px;
+}
 .card {
-  background: #121e32; border: 1px solid #263650;
-  border-radius: 12px; padding: 23px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  transition: .25s;
 }
-.card h3 { color: #63d5c5; margin-bottom: 10px; }
-.card p { color: #aab8cc; font-size: 14px; }
-.skills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
-.skills span {
-  background: #172941; border: 1px solid #29445c;
-  padding: 8px 13px; border-radius: 20px; font-size: 13px;
+.card:hover {
+  border-color: var(--teal);
+  transform: translateY(-5px);
 }
-.status { color: #f2c879; font-size: 12px; margin-top: 14px; display: block; }
-#contact { background: #101a2d; }
-footer { text-align: center; padding: 25px; color: #8292aa; font-size: 13px; }
+.card h3 {
+  color: var(--teal);
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.card p {
+  color: var(--muted);
+  font-size: 14px;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 25px;
+}
+.skill {
+  padding: 9px 15px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  border-radius: 6px;
+  color: #c6d5e7;
+  font-size: 13px;
+}
+.status {
+  display: inline-block;
+  margin-top: 16px;
+  color: #eacb85;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#about { background: #0b1423; }
+.about-box {
+  border-left: 3px solid var(--teal);
+  padding-left: 22px;
+}
+#contact { background: #0b1423; }
+.contact-link {
+  color: var(--teal);
+  display: inline-block;
+  margin-top: 20px;
+}
+footer {
+  text-align: center;
+  padding: 28px 15px;
+  color: #75869b;
+  font-size: 12px;
+  border-top: 1px solid var(--border);
+}
 @media(max-width:600px) {
-  nav { padding: 16px 5%; }
-  nav a { margin-left: 9px; font-size: 12px; }
-  section { padding: 55px 6%; }
+  nav { padding: 14px 5%; }
+  .navlinks { gap: 11px; }
+  .navlinks a { font-size: 11px; }
+  .logo { font-size: 20px; }
+  section { padding: 65px 6%; }
+  .hero { padding: 85px 6%; }
+  h2 { font-size: 29px; }
 }
 </style>
 </head>
+
 <body>
 
 <nav>
-  <div class="logo">DEMILADE.</div>
-  <div>
+  <a href="#home" class="logo">DT.</a>
+  <div class="navlinks">
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
@@ -70,98 +210,128 @@ footer { text-align: center; padding: 25px; color: #8292aa; font-size: 13px; }
   </div>
 </nav>
 
-<section class="hero">
-  <div class="tag">AI & AUTOMATION ENGINEER</div>
-  <h1>Building smarter systems<br>through <span>AI & Automation.</span></h1>
+<header class="hero" id="home">
+  <div class="eyebrow">WELCOME TO MY DIGITAL SPACE</div>
+  <h1>Turning Ideas Into<br><span class="highlight">Intelligent Automation.</span></h1>
   <p>
-    Hello, I'm Demilade. I am developing intelligent automation
-    solutions that help businesses simplify repetitive tasks,
-    improve workflows and work more efficiently.
+    I'm Demilade, an aspiring AI & Automation Engineer
+    passionate about building intelligent workflows,
+    connecting technologies and creating solutions
+    that make business processes smarter.
   </p>
-  <div>
-    <a class="btn" href="#projects">Explore My Projects</a>
+  <div class="actions">
+    <a href="#projects" class="btn primary">Explore My Work ↗</a>
+    <a href="#contact" class="btn secondary">Let's Connect</a>
+  </div>
+</header>
+
+<section id="about">
+  <div class="section-label">01 / ABOUT ME</div>
+  <h2>Building With <span class="highlight">Purpose.</span></h2>
+  <div class="about-box">
+    <p class="description">
+      I am an aspiring AI & Automation Engineer with an
+      interest in artificial intelligence, workflow design
+      and business process optimisation. My focus is on
+      learning, experimenting and developing practical
+      solutions that address real-world problems.
+      Through hands-on projects, I am building my ability
+      to integrate AI tools, automate repetitive tasks
+      and create efficient digital systems.
+    </p>
   </div>
 </section>
 
-<section id="about">
-  <h2>About <span>Me</span></h2>
-  <p class="muted">
-    I am an aspiring AI & Automation Engineer with an interest
-    in workflow automation, artificial intelligence and business
-    process optimisation. I enjoy learning how technology can
-    solve practical problems and improve everyday operations.
-    I am continuously developing my technical skills through
-    hands-on projects and practical learning.
-  </p>
-</section>
-
 <section id="skills">
-  <h2>Technical <span>Skills</span></h2>
-  <p class="muted">Technologies I am learning and working with.</p>
+  <div class="section-label">02 / TECHNOLOGY</div>
+  <h2>My Technical <span class="highlight">Toolkit.</span></h2>
+  <p class="description">
+    Tools and technologies I am learning and developing
+    practical experience with.
+  </p>
   <div class="skills">
-    <span>n8n</span>
-    <span>Zapier</span>
-    <span>Make</span>
-    <span>OpenAI</span>
-    <span>Prompt Engineering</span>
-    <span>Google Sheets</span>
-    <span>Airtable</span>
-    <span>Webhooks</span>
-    <span>API Integration</span>
-    <span>AI Agents</span>
+    <span class="skill">n8n</span>
+    <span class="skill">Zapier</span>
+    <span class="skill">Make</span>
+    <span class="skill">OpenAI</span>
+    <span class="skill">Prompt Engineering</span>
+    <span class="skill">Google Sheets</span>
+    <span class="skill">Airtable</span>
+    <span class="skill">Webhooks</span>
+    <span class="skill">API Integration</span>
+    <span class="skill">AI Agents</span>
   </div>
 </section>
 
 <section id="projects">
-  <h2>My <span>Projects</span></h2>
-  <p class="muted">Practical solutions I am developing and documenting.</p>
-  <div class="cards">
-    <div class="card">
-      <h3>Appointment Booking Automation</h3>
-      <p>An automated booking workflow designed to collect
-      customer details, organise appointments and route requests
-      to the right department using Zapier and Google Sheets.</p>
+  <div class="section-label">03 / SELECTED WORK</div>
+  <h2>Projects & <span class="highlight">Experiments.</span></h2>
+  <p class="description">
+    A collection of business automation ideas and
+    practical solutions I am developing.
+  </p>
+  <div class="grid">
+    <article class="card">
+      <h3>01. Appointment Automation</h3>
+      <p>
+        A booking workflow designed to collect customer
+        information, organise appointments and route
+        requests to the correct department.
+      </p>
       <span class="status">In development</span>
-    </div>
-    <div class="card">
-      <h3>AI Email Classification</h3>
-      <p>An n8n workflow designed to analyse incoming emails
-      with AI and classify them into departments such as Sales,
-      HR, Finance and Customer Service.</p>
+    </article>
+    <article class="card">
+      <h3>02. AI Email Classification</h3>
+      <p>
+        An intelligent email workflow designed to
+        analyse incoming messages and classify them
+        into Sales, HR, Finance and other departments.
+      </p>
       <span class="status">In development</span>
-    </div>
-    <div class="card">
-      <h3>AI Customer Support Assistant</h3>
-      <p>A proposed AI assistant that can answer common
-      customer questions, understand requests and escalate
-      complex issues to human support.</p>
-      <span class="status">Planned project</span>
-    </div>
-    <div class="card">
-      <h3>Automated Lead Management</h3>
-      <p>A proposed workflow for capturing customer leads,
-      organising information and notifying sales teams.</p>
-      <span class="status">Planned project</span>
-    </div>
+    </article>
+    <article class="card">
+      <h3>03. AI Support Assistant</h3>
+      <p>
+        A proposed assistant for answering common
+        customer questions and escalating complex
+        enquiries to human support.
+      </p>
+      <span class="status">Planned</span>
+    </article>
+    <article class="card">
+      <h3>04. Lead Management</h3>
+      <p>
+        A proposed system for capturing leads,
+        organising customer information and
+        notifying sales teams automatically.
+      </p>
+      <span class="status">Planned</span>
+    </article>
   </div>
 </section>
 
 <section id="contact">
-  <h2>Let's <span>Connect</span></h2>
-  <p class="muted">
-    Interested in AI, automation or collaborating on a project?
-    I'd love to connect.
+  <div class="section-label">04 / GET IN TOUCH</div>
+  <h2>Let's Build Something <span class="highlight">Smart.</span></h2>
+  <p class="description">
+    Interested in AI, workflow automation or technology?
+    Let's connect and explore opportunities to create
+    meaningful solutions.
   </p>
-  <a class="btn" href="https://github.com/tayokehindedemilade-coder">
-    Visit My GitHub
+  <a class="contact-link"
+     href="https://github.com/tayokehindedemilade-coder">
+     GitHub Profile ↗
   </a>
-  <p class="muted" style="margin-top:20px">
-    Email: Add your professional email address here.
-  </p>
+  <br>
+  <a class="contact-link"
+     href="mailto:YOUR-EMAIL@example.com">
+     Email Me ↗
+  </a>
 </section>
 
 <footer>
-  © 2026 Demilade | AI & Automation Engineer Portfolio
+  <p>DT. | DEMILADE — AI & AUTOMATION ENGINEER</p>
+  <p>© 2026. Built with curiosity and purpose.</p>
 </footer>
 
 </body>

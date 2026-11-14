@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="AI Email Classification workflow project by Demilade.">
+
+<title>AI Email Classification | Demilade</title>
+
+<style>
+:root {
+  --bg: #070d18;
+  --panel: #101b2d;
+  --teal: #54e2cf;
+  --white: #edf5ff;
+  --muted: #9aabc0;
+  --border: #23354b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: var(--white);
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  padding: 20px 8%;
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  color: var(--teal);
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.hero {
+  padding: 100px 8% 75px;
+  background:
+    radial-gradient(
+      ellipse at 80% 35%,
+      rgba(36,188,174,.15),
+      transparent 45%
+    ),
+    var(--bg);
+}
+
+.label {
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+h1 {
+  font-size: clamp(36px, 7vw, 65px);
+  line-height: 1.15;
+  margin: 20px 0;
+}
+
+.highlight {
+  color: var(--teal);
+}
+
+.hero p {
+  color: var(--muted);
+  max-width: 680px;
+  font-size: 16px;
+}
+
+section {
+  padding: 65px 8%;
+}
+
+h2 {
+  font-size: 29px;
+  margin-bottom: 18px;
+}
+
+.description {
+  color: var(--muted);
+  max-width: 750px;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 25px;
+  margin-top: 22px;
+}
+
+.card h3 {
+  color: var(--teal);
+  margin-bottom: 12px;
+}
+
+.card p,
+.card li {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+ul {
+  padding-left: 22px;
+}
+
+.workflow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 16px;
+  margin-top: 25px;
+}
+
+.step {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.step span {
+  color: var(--teal);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.step h3 {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.step p {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.back {
+  display: inline-block;
+  margin-top: 25px;
+  color: var(--teal);
+}
+
+.back:hover {
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 28px 15px;
+  color: #75869b;
+  font-size: 12px;
+  border-top: 1px solid var(--border);
+}
+
+@media(max-width:600px) {
+  .hero {
+    padding: 75px 6%;
+  }
+
+  section {
+    padding: 55px 6%;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html" class="logo">DEMILADE.</a>
+</nav>
+
+<header class="hero">
+
+  <div class="label">
+    PROJECT 02 / AI AUTOMATION
+  </div>
+
+  <h1>
+    AI Email
+    <span class="highlight">Classification.</span>
+  </h1>
+
+  <p>
+    An intelligent email automation concept designed
+    to analyse incoming messages, identify their purpose
+    and organise them into the appropriate business
+    departments.
+  </p>
+
+  <a href="index.html" class="back">
+    ← Back to Portfolio
+  </a>
+
+</header>
+
+<section>
+
+  <div class="label">01 / OVERVIEW</div>
+
+  <h2>Project Overview</h2>
+
+  <p class="description">
+    Businesses receive emails from customers,
+    employees and other organisations every day.
+    Sorting these messages manually can consume time
+    and delay responses.
+
+    This project explores how AI can automatically
+    analyse incoming emails and classify them according
+    to their content, making email management more
+    organised and efficient.
+  </p>
+
+</section>
+
+<section>
+
+  <div class="label">02 / WORKFLOW</div>
+
+  <h2>How It Works</h2>
+
+  <p class="description">
+    The proposed workflow follows a simple sequence
+    to process and organise incoming messages.
+  </p>
+
+  <div class="workflow">
+
+    <div class="step">
+      <span>STEP 01</span>
+      <h3>Email Trigger</h3>
+      <p>
+        Detects a new incoming email through an
+        email trigger.
+      </p>
+    </div>
+
+    <div class="step">
+      <span>STEP 02</span>
+      <h3>AI Analysis</h3>
+      <p>
+        AI examines the subject and message content
+        to understand the purpose of the email.
+      </p>
+    </div>
+
+    <div class="step">
+      <span>STEP 03</span>
+      <h3>Classification</h3>
+      <p>
+        The message is assigned to the most
+        appropriate department.
+      </p>
+    </div>
+
+    <div class="step">
+      <span>STEP 04</span>
+      <h3>Routing</h3>
+      <p>
+        The classified email is directed to the
+        appropriate department or workflow.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section>
+
+  <div class="label">03 / CATEGORIES</div>
+
+  <h2>Email Classification Categories</h2>
+
+  <div class="card">
+    <ul>
+      <li>Sales – Product enquiries and sales requests.</li>
+      <li>Customer Service – Complaints and customer support.</li>
+      <li>HR – Recruitment and employee-related messages.</li>
+      <li>Finance – Payments, invoices and financial enquiries.</li>
+      <li>Operations – Internal and operational matters.</li>
+      <li>Other – Messages that do not fit the listed categories.</li>
+    </ul>
+  </div>
+
+</section>
+
+<section>
+
+  <div class="label">04 / TECHNOLOGY</div>
+
+  <h2>Tools & Technologies</h2>
+
+  <div class="card">
+    <ul>
+      <li>n8n – Workflow automation.</li>
+      <li>OpenAI – AI-powered email analysis.</li>
+      <li>IMAP Email Trigger – Detecting incoming messages.</li>
+      <li>Conditional Routing – Directing classified emails.</li>
+    </ul>
+  </div>
+
+</section>
+
+<section>
+
+  <div class="label">05 / OBJECTIVE</div>
+
+  <h2>Project Goal</h2>
+
+  <p class="description">
+    The goal is to explore how artificial intelligence
+    and workflow automation can reduce repetitive
+    administrative tasks, improve email organisation
+    and help businesses manage incoming communication
+    more efficiently.
+  </p>
+
+  <a href="index.html" class="back">
+    ← Return to Main Portfolio
+  </a>
+
+</section>
+
+<footer>
+  <p>DEMILADE. | AI & AUTOMATION ENGINEER</p>
+  <p>© 2026 Demilade. Built with curiosity and purpose.</p>
+</footer>
+
+</body>
+</html>

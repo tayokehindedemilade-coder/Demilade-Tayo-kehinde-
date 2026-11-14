@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#070d18">
+<title>Appointment Automation | Demilade</title>
+
+<style>
+:root {
+  --bg: #070d18;
+  --panel: #101b2d;
+  --teal: #54e2cf;
+  --white: #edf5ff;
+  --muted: #9aabc0;
+  --border: #23354b;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--white);
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+a { text-decoration: none; }
+nav {
+  padding: 20px 8%;
+  border-bottom: 1px solid var(--border);
+}
+.logo { color: var(--teal); font-weight: 900; letter-spacing: 2px; }
+main { padding: 75px 8%; }
+.label {
+  color: var(--teal);
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+h1 { font-size: clamp(36px, 7vw, 60px); line-height: 1.2; margin: 20px 0; }
+h2 { font-size: 28px; margin-bottom: 18px; }
+.highlight { color: var(--teal); }
+p { color: var(--muted); margin-bottom: 18px; }
+.intro { max-width: 700px; font-size: 17px; }
+section { margin-top: 75px; }
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 25px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 16px;
+  margin-top: 25px;
+}
+.step {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+}
+.step strong { color: var(--teal); display: block; margin-bottom: 8px; }
+.tools { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.tool {
+  border: 1px solid var(--border);
+  background: var(--panel);
+  padding: 9px 15px;
+  border-radius: 6px;
+  color: var(--teal);
+  font-size: 13px;
+}
+.back {
+  display: inline-block;
+  color: var(--teal);
+  margin-top: 30px;
+}
+footer {
+  text-align: center;
+  padding: 25px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 12px;
+}
+@media(max-width:600px) {
+  main { padding: 55px 6%; }
+  section { margin-top: 55px; }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html" class="logo">DEMILADE.</a>
+</nav>
+
+<main>
+  <div class="label">PROJECT 01 / WORKFLOW AUTOMATION</div>
+
+  <h1>Appointment <span class="highlight">Automation.</span></h1>
+
+  <p class="intro">
+    A business appointment booking workflow designed
+    to organise customer requests, route appointments
+    and reduce repetitive administrative tasks.
+  </p>
+
+  <section>
+    <h2>Project Overview</h2>
+    <div class="panel">
+      <p>
+        This project explores how automation can simplify
+        appointment management for businesses.
+      </p>
+      <p>
+        Customer details and appointment requests are
+        collected through a form and organised in Google
+        Sheets. The workflow can then route each request
+        to the appropriate department.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>How It Works</h2>
+    <div class="grid">
+      <div class="step">
+        <strong>01. Customer Submission</strong>
+        <p>A customer submits their name, email, phone number, service and preferred appointment date.</p>
+      </div>
+      <div class="step">
+        <strong>02. Data Collection</strong>
+        <p>Appointment information is recorded in Google Sheets.</p>
+      </div>
+      <div class="step">
+        <strong>03. Department Routing</strong>
+        <p>Requests are organised into Sales, Support or Installations.</p>
+      </div>
+      <div class="step">
+        <strong>04. Notification</strong>
+        <p>The workflow prepares an appointment notification for the relevant team.</p>
+      </div>
+      <div class="step">
+        <strong>05. Status Tracking</strong>
+        <p>Each appointment is tracked with a Pending Confirmation status.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Tools & Technologies</h2>
+    <div class="tools">
+      <span class="tool">Zapier</span>
+      <span class="tool">Google Sheets</span>
+      <span class="tool">Automation</span>
+      <span class="tool">Workflow Design</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Project Objective</h2>
+    <p>
+      The goal is to demonstrate how connected digital
+      tools can improve organisation, reduce manual work
+      and make appointment handling more efficient.
+    </p>
+  </section>
+
+  <a href="index.html#projects" class="back">← Back to Portfolio</a>
+</main>
+
+<footer>
+  DEMILADE. | AI & AUTOMATION ENGINEERING
+  <br>© 2026 Demilade.
+</footer>
+
+</body>
+</html>

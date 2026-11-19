@@ -4,88 +4,128 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#070d18">
 <title>Appointment Automation | Demilade</title>
 
 <style>
-:root {
-  --bg: #070d18;
-  --panel: #101b2d;
-  --teal: #54e2cf;
-  --white: #edf5ff;
-  --muted: #9aabc0;
-  --border: #23354b;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-* { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+
 body {
-  background: var(--bg);
-  color: var(--white);
+  background: #080d18;
+  color: #e5eaf2;
   font-family: Arial, sans-serif;
   line-height: 1.7;
+  padding: 30px 8%;
 }
-a { text-decoration: none; }
-nav {
-  padding: 20px 8%;
-  border-bottom: 1px solid var(--border);
+
+nav { margin-bottom: 65px; }
+
+a {
+  color: #42d6c5;
+  text-decoration: none;
 }
-.logo { color: var(--teal); font-weight: 900; letter-spacing: 2px; }
-main { padding: 75px 8%; }
+
 .label {
-  color: var(--teal);
+  color: #42d6c5;
   font-size: 12px;
-  letter-spacing: 3px;
-  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
 }
-h1 { font-size: clamp(36px, 7vw, 60px); line-height: 1.2; margin: 20px 0; }
-h2 { font-size: 28px; margin-bottom: 18px; }
-.highlight { color: var(--teal); }
-p { color: var(--muted); margin-bottom: 18px; }
-.intro { max-width: 700px; font-size: 17px; }
-section { margin-top: 75px; }
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 23px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+h3 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+section {
+  max-width: 900px;
+  margin-bottom: 45px;
+}
+
+p {
+  color: #aab5c5;
+  margin-bottom: 15px;
+}
+
 .panel {
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: 12px;
+  background: #101a2b;
+  border: 1px solid #24344a;
+  border-radius: 10px;
   padding: 25px;
 }
-.grid {
+
+ul {
+  padding-left: 22px;
+  color: #aab5c5;
+}
+
+li { margin-bottom: 10px; }
+
+.workflow {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  gap: 16px;
-  margin-top: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  margin-top: 20px;
 }
-.step {
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 20px;
+
+.workflow div {
+  background: #14283a;
+  border: 1px solid #29445a;
+  padding: 16px;
+  border-radius: 8px;
+  color: #42d6c5;
+  text-align: center;
 }
-.step strong { color: var(--teal); display: block; margin-bottom: 8px; }
-.tools { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
-.tool {
-  border: 1px solid var(--border);
-  background: var(--panel);
-  padding: 9px 15px;
-  border-radius: 6px;
-  color: var(--teal);
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tools span {
+  background: #14283a;
+  color: #42d6c5;
+  padding: 8px 13px;
+  border-radius: 5px;
   font-size: 13px;
 }
-.back {
+
+.status {
   display: inline-block;
-  color: var(--teal);
-  margin-top: 30px;
-}
-footer {
-  text-align: center;
-  padding: 25px;
-  border-top: 1px solid var(--border);
-  color: var(--muted);
+  padding: 6px 12px;
+  border-radius: 5px;
+  background: #332b19;
+  color: #f0c674;
   font-size: 12px;
+  margin-bottom: 15px;
 }
+
+footer {
+  border-top: 1px solid #24344a;
+  padding-top: 25px;
+  margin-top: 60px;
+  color: #8290a3;
+  font-size: 13px;
+}
+
 @media(max-width:600px) {
-  main { padding: 55px 6%; }
-  section { margin-top: 55px; }
+  body { padding: 25px 6%; }
+  h1 { font-size: 32px; }
 }
 </style>
 </head>
@@ -93,87 +133,116 @@ footer {
 <body>
 
 <nav>
-  <a href="index.html" class="logo">DEMILADE.</a>
+<a href="index.html">← Back to portfolio</a>
 </nav>
 
-<main>
-  <div class="label">PROJECT 01 / WORKFLOW AUTOMATION</div>
+<section>
+<p class="label">PROJECT 01 / AUTOMATION CASE STUDY</p>
+<h1>Appointment Booking Automation</h1>
+<span class="status">Implementation documented · Deployment restricted</span>
+<p>
+A department-based appointment management workflow
+designed to organise customer booking requests,
+manage appointment information and automate
+departmental email notifications.
+</p>
+</section>
 
-  <h1>Appointment <span class="highlight">Automation.</span></h1>
+<section class="panel">
+<h2>01. Project Overview</h2>
+<p>
+The goal of this project was to design an automated
+appointment management system that reduces manual
+handling of customer requests and improves how
+appointments are distributed across departments.
+</p>
+<p>
+The workflow uses Google Sheets as its central
+appointment database and Zapier to process new
+appointment records and manage notification routing.
+</p>
+</section>
 
-  <p class="intro">
-    A business appointment booking workflow designed
-    to organise customer requests, route appointments
-    and reduce repetitive administrative tasks.
-  </p>
+<section>
+<h2>02. System Architecture</h2>
+<p>The planned workflow follows this structure:</p>
 
-  <section>
-    <h2>Project Overview</h2>
-    <div class="panel">
-      <p>
-        This project explores how automation can simplify
-        appointment management for businesses.
-      </p>
-      <p>
-        Customer details and appointment requests are
-        collected through a form and organised in Google
-        Sheets. The workflow can then route each request
-        to the appropriate department.
-      </p>
-    </div>
-  </section>
+<div class="workflow">
+<div>Google Sheets<br>Appointment Data</div>
+<div>Zapier<br>New Row Trigger</div>
+<div>Department<br>Routing Paths</div>
+<div>Gmail<br>Email Notifications</div>
+</div>
+</section>
 
-  <section>
-    <h2>How It Works</h2>
-    <div class="grid">
-      <div class="step">
-        <strong>01. Customer Submission</strong>
-        <p>A customer submits their name, email, phone number, service and preferred appointment date.</p>
-      </div>
-      <div class="step">
-        <strong>02. Data Collection</strong>
-        <p>Appointment information is recorded in Google Sheets.</p>
-      </div>
-      <div class="step">
-        <strong>03. Department Routing</strong>
-        <p>Requests are organised into Sales, Support or Installations.</p>
-      </div>
-      <div class="step">
-        <strong>04. Notification</strong>
-        <p>The workflow prepares an appointment notification for the relevant team.</p>
-      </div>
-      <div class="step">
-        <strong>05. Status Tracking</strong>
-        <p>Each appointment is tracked with a Pending Confirmation status.</p>
-      </div>
-    </div>
-  </section>
+<section class="panel">
+<h2>03. Implementation</h2>
+<ul>
+<li>Created an appointment spreadsheet with customer information fields.</li>
+<li>Configured a Google Sheets new-row trigger in Zapier.</li>
+<li>Created department routing conditions for Sales, Support and Installations.</li>
+<li>Configured professional Gmail notification templates for each department.</li>
+<li>Tested individual email actions and received test notifications.</li>
+</ul>
+</section>
 
-  <section>
-    <h2>Tools & Technologies</h2>
-    <div class="tools">
-      <span class="tool">Zapier</span>
-      <span class="tool">Google Sheets</span>
-      <span class="tool">Automation</span>
-      <span class="tool">Workflow Design</span>
-    </div>
-  </section>
+<section>
+<h2>04. Appointment Data Structure</h2>
+<p>The spreadsheet was designed with these fields:</p>
+<ul>
+<li>Customer Name</li>
+<li>Email Address</li>
+<li>Phone Number</li>
+<li>Requested Service</li>
+<li>Department</li>
+<li>Appointment Date</li>
+<li>Appointment Status</li>
+</ul>
+</section>
 
-  <section>
-    <h2>Project Objective</h2>
-    <p>
-      The goal is to demonstrate how connected digital
-      tools can improve organisation, reduce manual work
-      and make appointment handling more efficient.
-    </p>
-  </section>
+<section class="panel">
+<h2>05. Testing & Challenges</h2>
+<p>
+Individual Gmail notification actions were tested
+successfully. A test notification was received.
+</p>
+<p>
+During deployment, Zapier requested a plan upgrade
+for the multi-step workflow and department routing
+configuration. This prevented full publication of
+the intended automation.
+</p>
+<p>
+The complete end-to-end routing process therefore
+remains pending deployment and validation.
+</p>
+</section>
 
-  <a href="index.html#projects" class="back">← Back to Portfolio</a>
-</main>
+<section>
+<h2>06. Tools & Technologies</h2>
+<div class="tools">
+<span>Zapier</span>
+<span>Google Sheets</span>
+<span>Gmail</span>
+<span>Workflow Automation</span>
+<span>Conditional Routing</span>
+</div>
+</section>
+
+<section class="panel">
+<h2>07. Engineering Lessons</h2>
+<ul>
+<li>Designing automated workflows around structured data.</li>
+<li>Configuring triggers and conditional routing logic.</li>
+<li>Mapping spreadsheet data into automated email messages.</li>
+<li>Testing individual workflow actions.</li>
+<li>Identifying platform limitations during deployment.</li>
+</ul>
+</section>
 
 <footer>
-  DEMILADE. | AI & AUTOMATION ENGINEERING
-  <br>© 2026 Demilade.
+<a href="index.html">← Return to Demilade's Portfolio</a>
+<p>© 2026 Demilade Tayo-kehinde</p>
 </footer>
 
 </body>

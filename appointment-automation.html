@@ -75,6 +75,27 @@ ul {
 
 li { margin-bottom: 10px; }
 
+.architecture-image {
+  margin: 25px 0;
+  background: #101a2b;
+  border: 1px solid #24344a;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.architecture-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
+}
+
+.architecture-image p {
+  margin: 12px 0 0;
+  font-size: 13px;
+  text-align: center;
+}
+
 .workflow {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -164,10 +185,18 @@ appointment records and manage notification routing.
 </section>
 
 <section>
+<h2>02. System Architecture</h2>
+
 <div class="architecture-image">
-  <img src=zapier-workflow.png alt="Zapier appointment booking automation workflow">
-  <p>Zapier workflow: Google Sheets, department routing and Gmail notifications.</p>
+  <img
+    src="./zapier-workflow.png"
+    alt="Zapier appointment booking automation workflow showing Google Sheets, department routing paths and Gmail actions">
+  <p>
+    Actual Zapier workflow structure showing Google Sheets,
+    department routing and Gmail notification actions.
+  </p>
 </div>
+
 <p>The planned workflow follows this structure:</p>
 
 <div class="workflow">

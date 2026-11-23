@@ -21,18 +21,14 @@ body {
   padding: 30px 8%;
 }
 
-nav {
-  margin-bottom: 65px;
-}
+nav { margin-bottom: 65px; }
 
 a {
   color: #42d6c5;
   text-decoration: none;
 }
 
-a:hover {
-  color: #ffffff;
-}
+a:hover { color: #ffffff; }
 
 .label {
   color: #42d6c5;
@@ -79,9 +75,7 @@ ul {
   color: #aab5c5;
 }
 
-li {
-  margin-bottom: 10px;
-}
+li { margin-bottom: 10px; }
 
 .architecture-image {
   margin: 25px 0;
@@ -156,6 +150,22 @@ li {
   color: #42d6c5;
 }
 
+.evidence-card {
+  margin: 25px 0;
+  background: #14283a;
+  border: 1px solid #29445a;
+  border-radius: 10px;
+  padding: 18px;
+}
+
+.evidence-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
+  margin-top: 12px;
+}
+
 footer {
   border-top: 1px solid #24344a;
   padding-top: 25px;
@@ -165,17 +175,9 @@ footer {
 }
 
 @media(max-width: 600px) {
-  body {
-    padding: 25px 6%;
-  }
-
-  h1 {
-    font-size: 32px;
-  }
-
-  .panel {
-    padding: 20px;
-  }
+  body { padding: 25px 6%; }
+  h1 { font-size: 32px; }
+  .panel { padding: 20px; }
 }
 </style>
 </head>
@@ -186,10 +188,8 @@ footer {
 <a href="index.html">← Back to portfolio</a>
 </nav>
 
-<!-- PROJECT INTRODUCTION -->
 <section>
 <p class="label">PROJECT 01 / AUTOMATION CASE STUDY</p>
-
 <h1>Appointment Booking Automation</h1>
 
 <span class="status">
@@ -204,7 +204,6 @@ departmental email notifications.
 </p>
 </section>
 
-<!-- PROJECT OVERVIEW -->
 <section class="panel">
 <h2>01. Project Overview</h2>
 
@@ -222,12 +221,10 @@ appointment records and manage notification routing.
 </p>
 </section>
 
-<!-- SYSTEM ARCHITECTURE -->
 <section>
 <h2>02. System Architecture</h2>
 
 <div class="architecture-image">
-
 <img
 src="./zapier-workflow.png"
 alt="Zapier appointment booking automation workflow showing Google Sheets, department routing paths and Gmail actions">
@@ -236,37 +233,18 @@ alt="Zapier appointment booking automation workflow showing Google Sheets, depar
 Actual Zapier workflow structure showing Google Sheets,
 department routing and Gmail notification actions.
 </p>
-
 </div>
 
 <p>The planned workflow follows this structure:</p>
 
 <div class="workflow">
-
-<div>
-Google Sheets<br>
-Appointment Data
-</div>
-
-<div>
-Zapier<br>
-New Row Trigger
-</div>
-
-<div>
-Department<br>
-Routing Paths
-</div>
-
-<div>
-Gmail<br>
-Email Notifications
-</div>
-
+<div>Google Sheets<br>Appointment Data</div>
+<div>Zapier<br>New Row Trigger</div>
+<div>Department<br>Routing Paths</div>
+<div>Gmail<br>Email Notifications</div>
 </div>
 </section>
 
-<!-- IMPLEMENTATION -->
 <section class="panel">
 <h2>03. Implementation</h2>
 
@@ -279,13 +257,10 @@ Email Notifications
 </ul>
 </section>
 
-<!-- DATA STRUCTURE -->
 <section>
 <h2>04. Appointment Data Structure</h2>
 
-<p>
-The spreadsheet was designed with these fields:
-</p>
+<p>The spreadsheet was designed with these fields:</p>
 
 <ul>
 <li>Customer Name</li>
@@ -298,7 +273,6 @@ The spreadsheet was designed with these fields:
 </ul>
 </section>
 
-<!-- TESTING -->
 <section class="panel">
 <h2>05. Testing & Challenges</h2>
 
@@ -320,7 +294,6 @@ remains pending deployment and validation.
 </p>
 </section>
 
-<!-- TOOLS -->
 <section>
 <h2>06. Tools & Technologies</h2>
 
@@ -333,7 +306,6 @@ remains pending deployment and validation.
 </div>
 </section>
 
-<!-- ENGINEERING LESSONS -->
 <section class="panel">
 <h2>07. Engineering Lessons</h2>
 
@@ -346,7 +318,6 @@ remains pending deployment and validation.
 </ul>
 </section>
 
-<!-- DEPARTMENT ROUTING LOGIC -->
 <section class="panel">
 <h2>08. Department Routing Logic</h2>
 
@@ -377,10 +348,43 @@ a notification to its corresponding department.
 </p>
 </section>
 
-<!-- FOOTER -->
+<!-- EMAIL NOTIFICATION EVIDENCE -->
+<section class="panel">
+<h2>09. Email Notification Evidence</h2>
+
+<p>
+The following screenshots document the Gmail notification
+actions configured for the three departments in Zapier.
+</p>
+
+<div class="evidence-card">
+<h3>Sales Department</h3>
+<p>Gmail notification configuration for Sales appointments.</p>
+<img
+src="./zapier-sales-notification.jpg"
+alt="Sales department Gmail notification configuration">
+</div>
+
+<div class="evidence-card">
+<h3>Support Department</h3>
+<p>Gmail notification configuration for Support appointments.</p>
+<img
+src="./zapier-support-notification.jpg"
+alt="Support department Gmail notification configuration">
+</div>
+
+<div class="evidence-card">
+<h3>Installation Department</h3>
+<p>Gmail notification configuration for Installation appointments.</p>
+<img
+src="./zapier-installation-notification.jpg"
+alt="Installation department Gmail notification configuration">
+</div>
+
+</section>
+
 <footer>
 <a href="index.html">← Return to Demilade's Portfolio</a>
-
 <p>© 2026 Demilade Tayo-kehinde</p>
 </footer>
 
